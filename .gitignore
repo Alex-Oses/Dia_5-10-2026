@@ -1,0 +1,38 @@
+# Este entregable no maneja credenciales, pero se listan por si se anaden
+#Endpoints de Azure u otros servicios: nunca deben subirse.
+.env
+*.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets*.json
+
+# Pesos de modelo y artefactos de cuantizacion: nunca en git
+*.gguf
+*.ggml
+*.safetensors
+*.bin
+*.pt
+*.pth
+ollama/
+
+# Los resultados SI se versionan: son la evidencia de que los scripts se
+# ejecutaron de verdad. Los .log no, porque son ruido de ejecucion.
+resultados/*.log
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editores y sistema
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+desktop.ini

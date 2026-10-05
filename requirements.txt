@@ -1,0 +1,24 @@
+# Dia 9 - Ecosistema Open Source y Modelos Locales
+#
+# Intencionalmente vacio de dependencias.
+#
+# Los dos scripts de este entregable usan SOLO la biblioteca estandar de Python
+# (urllib, json, re, subprocess, platform). Se puede clonar y ejecutar sin
+# pip install de nada.
+#
+# Es una decision, no una comodidad: el objeto del dia es ver el ecosistema
+# open source por dentro, y toda capa de abstraccion (un cliente de Ollama, un
+# SDK de vLLM) esconde justo lo que hay que entender: el formato de la peticion,
+# donde va la clave y que se devuelve.
+#
+# Lo unico que hace falta instalado es Ollama (https://ollama.com), que es el
+# motor, no una libreria de Python.
+#
+# Para la parte opcional de transformers (cargar pesos de Hugging Face
+# directamente, p. ej. google/gemma-4-E4B-it), si haria falta:
+#
+#   pip install torch transformers accelerate safetensors
+#
+# Y para afinar, mas alla del objetivo de este dia:
+#
+#   pip install peft datasets
